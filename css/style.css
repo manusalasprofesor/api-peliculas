@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0f0c29;
+    color: #f0f8ff;
+}
+
+h1{
+    text-align: center;
+    margin: 50px auto;
+}
+
+#app{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+#app figure{
+    width: 100%;
+    margin: 8px;
+    padding: 13px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #21187727;
+}
+
+#app figure img{
+    box-shadow: 0 10px 6px -6px rgba(6, 4, 12, 0.801);
+    max-width: 600px;
+    height: 450px;
+    border-radius: 5px;
+    transition: transform .5s ease;
+}
+
+#app figure img:hover{
+    transform: scale(1.05);
+}
+
+figcaption{
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+#consulta input{
+    width: 75%;
+    margin: auto;
+    display: block;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding-left: 1em;
+}
+
+#consulta input:focus{
+    background-color: rgb(88, 68, 188);
+    color: #fff;
+}
+
+#consulta button{
+    width: 10%;
+    margin: auto;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border-color: rgb(88, 68, 188);
+    color: #fff;
+    cursor: pointer;
+    border: 4px inset #fff;
+}
+
+#consulta button:hover{
+    background-color: rgb(155, 144, 209);
+    color: #333;
+}
+
+@media only screen and (min-width: 768px){
+    #app{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #app{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
