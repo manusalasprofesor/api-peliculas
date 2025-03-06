@@ -24,8 +24,8 @@ const app = async (dato) =>{
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'bf4d76a392msh8db8602899fba99p10792ejsne877d83d4ede',
-            'x-rapidapi-host': 'imdb146.p.rapidapi.com'
+            'x-rapidapi-key': '*************************************************', // posa la teva API Key
+            'x-rapidapi-host': '**************************'  // El teu host de rapidapi
         }
     }
 
